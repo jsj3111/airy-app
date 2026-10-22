@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/airy-app/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}</style>
+<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">비슷한 사진</span>
         <h2>추천은 Airy가,<br>선택은 내가</h2>
@@ -77,7 +80,7 @@
 <ul><li>그룹마다 &#34;베스트만 남기기&#34; 버튼으로 정리</li><li>즐겨찾기·보호 앨범 사진은 후보에서 제외</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="assets/img/similar-ko.webp" alt="유사한 사진 그룹 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="assets/img/swipe-ko.webp" alt="스와이프 정리 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">스와이프 정리</span>
@@ -85,7 +88,7 @@
         <p class="body">월별로 사진을 한 장씩 넘기며 왼쪽은 삭제, 오른쪽은 남기기. 실수했다면 바로 되돌릴 수 있어요.</p>
 <ul><li>사진마다 차지하는 용량 표시</li><li>중간에 멈춰도 그 자리부터 이어서</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">스마트 정리</span>
         <h2>고른 것만,<br>한 번 더 확인</h2>
@@ -93,7 +96,7 @@
 <ul><li>삭제한 사진은 &#39;최근 삭제된 항목&#39;에 30일간 보관</li><li>3초 안에 되돌리기 가능</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="assets/img/smart-ko.webp" alt="스마트 정리 확인 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="assets/img/widget-ko.webp" alt="홈 화면 위젯" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">위젯</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">사용 방법</span>
-    <h2>세 단계면 충분해요</h2>
+    <div class="reveal"><span class="kicker">사용 방법</span>
+    <h2>세 단계면 충분해요</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>사진 접근 허용</h3><p>분석은 모두 iPhone 안에서 이뤄져요. 처음 한 번 훑어보는 데 잠깐 걸려요.</p></div><div class="step"><div class="n">2</div><h3>추천 확인</h3><p>비슷한 사진, 큰 영상, 오래된 스크린샷을 카테고리별로 보여드려요.</p></div><div class="step"><div class="n">3</div><h3>직접 골라 정리</h3><p>남길 것과 지울 것을 고르고, iOS 확인창에서 승인하면 끝이에요.</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>사진 접근 허용</h3><p>분석은 모두 iPhone 안에서 이뤄져요. 처음 한 번 훑어보는 데 잠깐 걸려요.</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>추천 확인</h3><p>비슷한 사진, 큰 영상, 오래된 스크린샷을 카테고리별로 보여드려요.</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>직접 골라 정리</h3><p>남길 것과 지울 것을 고르고, iOS 확인창에서 승인하면 끝이에요.</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>사진은 폰 밖으로<br>나가지 않아요</h2>
       <p class="lead">Airy는 서버가 없어요. 사진을 업로드하지 않고, 계정도 만들지 않고, 광고나 추적 도구도 넣지 않았어요.</p>
       <div class="pgrid">
-<div class="pcard"><b>기기 안에서만 분석</b><p>Apple의 Vision으로 iPhone 안에서 비교해요.</p></div><div class="pcard"><b>수집하는 데이터 없음</b><p>App Store 개인정보 라벨: 데이터 수집 안 함.</p></div><div class="pcard"><b>삭제는 언제나 직접</b><p>Airy가 혼자 지우는 일은 없어요.</p></div><div class="pcard"><b>30일 안전망</b><p>지운 사진은 &#39;최근 삭제된 항목&#39;에 30일간 남아요.</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>기기 안에서만 분석</b><p>Apple의 Vision으로 iPhone 안에서 비교해요.</p></div><div class="pcard reveal" style="--d:1"><b>수집하는 데이터 없음</b><p>App Store 개인정보 라벨: 데이터 수집 안 함.</p></div><div class="pcard reveal" style="--d:2"><b>삭제는 언제나 직접</b><p>Airy가 혼자 지우는 일은 없어요.</p></div><div class="pcard reveal" style="--d:3"><b>30일 안전망</b><p>지운 사진은 &#39;최근 삭제된 항목&#39;에 30일간 남아요.</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="assets/img/privacy-ko.webp" alt="개인정보 안내 화면" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">요금</span>
-    <h2>무료로 시작하고,<br>필요할 때만 Pro</h2>
+    <div class="reveal"><span class="kicker">요금</span>
+    <h2>무료로 시작하고,<br>필요할 때만 Pro</h2></div>
 <p class="lead">첫날은 2GB까지, 그 뒤로는 매일 100MB까지 무료로 정리할 수 있어요.</p>    <div class="plans">
-      <div class="plan">
+      <div class="plan reveal" style="--d:0">
         <h3>무료</h3>
         <div class="price">₩0</div>
         <div class="per">첫날 2GB · 이후 하루 100MB</div>
         <ul><li>모든 기능 둘러보기</li><li>스와이프·유사 사진 정리</li><li>위젯</li></ul>
       </div>
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:1">
 <span class="tag">추천</span>        <h3>Airy Pro 연간</h3>
         <div class="price">₩29,000<span class="per"> / 년</span></div>
         <div class="per">체험 대상자는 14일 무료 체험 후 연 ₩29,000 · 체험 종료 전 알림 선택 가능</div>
         <ul><li>용량 제한 없이 정리</li><li>모든 카테고리·스마트 정리</li><li>언제든 해지</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Airy Pro 평생</h3>
         <div class="price">₩49,000</div>
         <div class="per">한 번 결제 · 구독 아님</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">자주 묻는 질문</span><h2>궁금한 점</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">자주 묻는 질문</span><h2>궁금한 점</h2></div>
+    <div class="faq reveal">
 <details><summary>지웠는데 용량이 바로 늘지 않아요.</summary><p>iOS는 지운 사진을 &#39;최근 삭제된 항목&#39;에 30일간 보관해요. 바로 공간을 확보하려면 사진 앱 › 앨범 › 최근 삭제된 항목에서 비우기를 눌러 주세요.</p></details>
 <details><summary>Airy가 제 사진을 마음대로 지울 수 있나요?</summary><p>아니요. 모든 삭제는 Review 화면 확인, 3초 되돌리기, iOS 확인창 승인을 거쳐야 해요. 위젯과 단축어는 화면을 열 뿐 아무것도 지우지 않아요.</p></details>
 <details><summary>사진이 서버로 전송되나요?</summary><p>아니요. Airy에는 서버가 없어요. 비교와 분석은 모두 iPhone 안에서 이뤄져요.</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="assets/img/icon.webp" alt="Airy" width="96" height="96" loading="lazy">
     <h2>가볍게, Airy</h2>
     <p class="lead">곧 App Store에서 만나요.</p>

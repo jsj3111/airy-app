@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/airy-app/ja/support.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard-jp/PretendardJPVariable.site.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard-jp/pretendard-jp.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}</style>
+<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
@@ -53,7 +56,7 @@
       <p>メールでお問い合わせください: <a href="mailto:airy.app.help@gmail.com">airy.app.help@gmail.com</a></p>
       <p>通常、2営業日以内に返信します(日本時間、土日祝を除く)。</p>
     </div>
-    <h2 class="faq-title" style="font-size:24px;margin-top:44px">よくある質問</h2>
+    <h2 class="faq-title">よくある質問</h2>
     <div class="faq">
 <details><summary>写真はサーバーに送られますか？</summary><p>いいえ。分析はすべてiPhoneの中で行われ、写真が端末の外に出ることはありません。</p></details>
 <details><summary>間違えて削除した写真は戻せますか？</summary><p>はい、30日以内なら戻せます。削除した写真は写真アプリの「最近削除した項目」に30日間残るので、写真アプリ › アルバム › 最近削除した項目から復元できます。</p></details>

@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/airy-app/ja/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard-jp/PretendardJPVariable.site.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard-jp/pretendard-jp.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}</style>
+<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">似ている写真</span>
         <h2>おすすめはAiryが、<br>選ぶのはあなた</h2>
@@ -77,7 +80,7 @@
 <ul><li>グループごとに「ベストだけ残す」ボタンで整理</li><li>お気に入りと保護したアルバムの写真は候補から除外</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/similar-ja.webp" alt="似ている写真のグループ画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/swipe-ja.webp" alt="スワイプで整理する画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">スワイプで整理</span>
@@ -85,7 +88,7 @@
         <p class="body">月ごとに写真を1枚ずつ見ながら、左で削除、右で残す。間違えても、すぐに取り消せます。</p>
 <ul><li>写真ごとの容量を表示</li><li>途中でやめても、続きから再開</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">スマート整理</span>
         <h2>選んだものだけ、<br>もう一度確認</h2>
@@ -93,7 +96,7 @@
 <ul><li>削除した写真は「最近削除した項目」に30日間保管</li><li>3秒以内なら取り消し可能</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/smart-ja.webp" alt="スマート整理の確認画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/widget-ja.webp" alt="ホーム画面のウィジェット" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">ウィジェット</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">使い方</span>
-    <h2>3ステップで完了</h2>
+    <div class="reveal"><span class="kicker">使い方</span>
+    <h2>3ステップで完了</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>写真へのアクセスを許可</h3><p>分析はすべてiPhoneの中で行います。最初の1回は、ひと通り確認するのに少し時間がかかります。</p></div><div class="step"><div class="n">2</div><h3>おすすめを確認</h3><p>似ている写真、大きな動画、古いスクリーンショットをカテゴリ別に表示します。</p></div><div class="step"><div class="n">3</div><h3>自分で選んで整理</h3><p>残すものと削除するものを選び、iOSの確認画面で承認すれば完了です。</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>写真へのアクセスを許可</h3><p>分析はすべてiPhoneの中で行います。最初の1回は、ひと通り確認するのに少し時間がかかります。</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>おすすめを確認</h3><p>似ている写真、大きな動画、古いスクリーンショットをカテゴリ別に表示します。</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>自分で選んで整理</h3><p>残すものと削除するものを選び、iOSの確認画面で承認すれば完了です。</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>写真はスマホの外に<br>出ません</h2>
       <p class="lead">Airyにはサーバーがありません。写真をアップロードせず、アカウントも作らず、広告や追跡ツールも入れていません。</p>
       <div class="pgrid">
-<div class="pcard"><b>端末の中だけで分析</b><p>AppleのVisionを使って、iPhoneの中で比較します。</p></div><div class="pcard"><b>収集するデータなし</b><p>App Storeのプライバシーラベル：「データの収集なし」。</p></div><div class="pcard"><b>削除はいつも自分で</b><p>Airyが勝手に削除することはありません。</p></div><div class="pcard"><b>30日間のセーフティネット</b><p>削除した写真は「最近削除した項目」に30日間残ります。</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>端末の中だけで分析</b><p>AppleのVisionを使って、iPhoneの中で比較します。</p></div><div class="pcard reveal" style="--d:1"><b>収集するデータなし</b><p>App Storeのプライバシーラベル：「データの収集なし」。</p></div><div class="pcard reveal" style="--d:2"><b>削除はいつも自分で</b><p>Airyが勝手に削除することはありません。</p></div><div class="pcard reveal" style="--d:3"><b>30日間のセーフティネット</b><p>削除した写真は「最近削除した項目」に30日間残ります。</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="../assets/img/privacy-ja.webp" alt="プライバシーの案内画面" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">料金</span>
-    <h2>無料ではじめて、<br>必要なときだけPro</h2>
+    <div class="reveal"><span class="kicker">料金</span>
+    <h2>無料ではじめて、<br>必要なときだけPro</h2></div>
 <p class="lead">初日は2GBまで、その後は毎日100MBまで無料で整理できます。</p>    <div class="plans">
-      <div class="plan">
+      <div class="plan reveal" style="--d:0">
         <h3>無料</h3>
         <div class="price">¥0</div>
         <div class="per">初日2GB · その後は1日100MB</div>
         <ul><li>すべての機能を試せる</li><li>スワイプ・似ている写真の整理</li><li>ウィジェット</li></ul>
       </div>
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:1">
 <span class="tag">おすすめ</span>        <h3>Airy Pro 年間</h3>
         <div class="price">¥3,800<span class="per"> / 年</span></div>
         <div class="per">対象の方は14日間の無料トライアル後、年額¥3,800 · トライアル終了前の通知を選べます</div>
         <ul><li>容量の上限なしで整理</li><li>すべてのカテゴリ・スマート整理</li><li>いつでも解約可能</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Airy Pro 買い切り</h3>
         <div class="price">¥6,000</div>
         <div class="per">1回のお支払い · サブスクリプションではありません</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">よくある質問</span><h2>気になること</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">よくある質問</span><h2>気になること</h2></div>
+    <div class="faq reveal">
 <details><summary>削除したのに、空き容量がすぐに増えません。</summary><p>iOSは削除した写真を「最近削除した項目」に30日間保管します。すぐに空き容量を増やすには、写真アプリ › アルバム › 最近削除した項目で削除してください。</p></details>
 <details><summary>Airyが勝手に写真を削除することはありますか？</summary><p>いいえ。削除するには必ず、「削除前の確認」画面でのチェック、3秒間の取り消し、iOSの確認画面での承認を経る必要があります。ウィジェットとショートカットは画面を開くだけで、何も削除しません。</p></details>
 <details><summary>写真はサーバーに送信されますか？</summary><p>いいえ。Airyにはサーバーがありません。比較も分析も、すべてiPhoneの中で行われます。</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="../assets/img/icon.webp" alt="Airy" width="96" height="96" loading="lazy">
     <h2>軽やかに、Airy</h2>
     <p class="lead">まもなくApp Storeで公開します。</p>

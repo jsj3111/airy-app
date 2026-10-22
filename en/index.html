@@ -19,13 +19,16 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jsj3111.github.io/airy-app/en/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#0E8F9A">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0B1117">
 <link rel="icon" href="../assets/img/favicon.png">
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/pretendard/woff2-dynamic-subset/PretendardVariable.subset.0.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/fonts/pretendard/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="../assets/site.css">
-<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}</style>
+<style>:root{--grad:linear-gradient(135deg,#1CC7B4 0%,#3577F0 100%);--accent:#0A7680;--accent-soft:rgba(20,184,166,.1);--accent-dark:#5EEAD4;--check:#0A7680;--glow-a:rgba(53,119,240,.16);--glow-b:rgba(28,199,180,.16);--icon-shadow:rgba(53,119,240,.5)}
+@media (prefers-color-scheme:dark){:root{--accent:var(--accent-dark);--check:var(--accent-dark);--bg-soft:#121A23}}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -69,7 +72,7 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">Similar photos</span>
         <h2>Airy suggests.<br>You decide.</h2>
@@ -77,7 +80,7 @@
 <ul><li>Clean each group with the “Keep best” button</li><li>Favorites and photos in protected albums are never suggested</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/similar-en.webp" alt="Similar photo groups screen" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/swipe-en.webp" alt="Swipe to clean screen" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">Swipe to clean</span>
@@ -85,7 +88,7 @@
         <p class="body">Go month by month, one photo at a time: swipe left to delete, right to keep. Made a mistake? Undo it right away.</p>
 <ul><li>See how much space each photo takes</li><li>Stop anytime and pick up where you left off</li></ul>      </div>
     </div>
-    <div class="feat">
+    <div class="feat reveal">
       <div>
         <span class="kicker">Smart Clean</span>
         <h2>Only your picks,<br>checked once more</h2>
@@ -93,7 +96,7 @@
 <ul><li>Deleted photos stay in Recently Deleted for 30 days</li><li>Undo within 3 seconds</li></ul>      </div>
       <div class="shot"><div class="phone"><img src="../assets/img/smart-en.webp" alt="Smart Clean review screen" width="600" height="1304" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feat rev">
+    <div class="feat reveal rev">
       <div class="shot"><div class="phone"><img src="../assets/img/widget-en.webp" alt="Home Screen widget" width="600" height="1304" loading="lazy" decoding="async"></div></div>
       <div>
         <span class="kicker">Widgets</span>
@@ -106,10 +109,10 @@
 
 <section class="soft">
   <div class="wrap center">
-    <span class="kicker">How it works</span>
-    <h2>Three steps, that's it</h2>
+    <div class="reveal"><span class="kicker">How it works</span>
+    <h2>Three steps, that's it</h2></div>
     <div class="steps">
-<div class="step"><div class="n">1</div><h3>Allow photo access</h3><p>All analysis happens on your iPhone. The first look through your library takes a little while.</p></div><div class="step"><div class="n">2</div><h3>Check the suggestions</h3><p>Similar photos, large videos and old screenshots, sorted by category.</p></div><div class="step"><div class="n">3</div><h3>Choose and clean</h3><p>Pick what to keep and what to delete, approve in the iOS dialog, and you&#39;re done.</p></div>    </div>
+<div class="step reveal" style="--d:0"><div class="n">1</div><h3>Allow photo access</h3><p>All analysis happens on your iPhone. The first look through your library takes a little while.</p></div><div class="step reveal" style="--d:1"><div class="n">2</div><h3>Check the suggestions</h3><p>Similar photos, large videos and old screenshots, sorted by category.</p></div><div class="step reveal" style="--d:2"><div class="n">3</div><h3>Choose and clean</h3><p>Pick what to keep and what to delete, approve in the iOS dialog, and you&#39;re done.</p></div>    </div>
   </div>
 </section>
 
@@ -120,7 +123,7 @@
       <h2>Your photos never<br>leave your phone</h2>
       <p class="lead">Airy has no servers. It doesn&#39;t upload your photos, doesn&#39;t ask you to create an account, and has no ads or tracking tools.</p>
       <div class="pgrid">
-<div class="pcard"><b>Analyzed on your device</b><p>Photos are compared on your iPhone using Apple&#39;s Vision.</p></div><div class="pcard"><b>No data collected</b><p>App Store privacy label: Data Not Collected.</p></div><div class="pcard"><b>You always delete</b><p>Airy never deletes anything on its own.</p></div><div class="pcard"><b>30-day safety net</b><p>Deleted photos stay in Recently Deleted for 30 days.</p></div>      </div>
+<div class="pcard reveal" style="--d:0"><b>Analyzed on your device</b><p>Photos are compared on your iPhone using Apple&#39;s Vision.</p></div><div class="pcard reveal" style="--d:1"><b>No data collected</b><p>App Store privacy label: Data Not Collected.</p></div><div class="pcard reveal" style="--d:2"><b>You always delete</b><p>Airy never deletes anything on its own.</p></div><div class="pcard reveal" style="--d:3"><b>30-day safety net</b><p>Deleted photos stay in Recently Deleted for 30 days.</p></div>      </div>
     </div>
     <div class="shot"><div class="phone"><img src="../assets/img/privacy-en.webp" alt="Privacy screen" width="600" height="1304" loading="lazy" decoding="async"></div></div>
   </div>
@@ -128,22 +131,22 @@
 
 <section id="pricing">
   <div class="wrap center">
-    <span class="kicker">Pricing</span>
-    <h2>Start free.<br>Go Pro only when you need it.</h2>
+    <div class="reveal"><span class="kicker">Pricing</span>
+    <h2>Start free.<br>Go Pro only when you need it.</h2></div>
 <p class="lead">Clean up to 2 GB free on your first day, then up to 100 MB every day.</p>    <div class="plans">
-      <div class="plan">
+      <div class="plan reveal" style="--d:0">
         <h3>Free</h3>
         <div class="price">$0</div>
         <div class="per">2 GB on day one · then 100 MB a day</div>
         <ul><li>Explore every feature</li><li>Swipe and similar-photo cleanup</li><li>Widgets</li></ul>
       </div>
-      <div class="plan hl">
+      <div class="plan reveal hl" style="--d:1">
 <span class="tag">Best value</span>        <h3>Airy Pro Yearly</h3>
         <div class="price">$24.99<span class="per"> / year</span></div>
         <div class="per">Eligible users get a 14-day free trial, then $24.99/year · Optional reminder before the trial ends</div>
         <ul><li>Clean without limits</li><li>Every category + Smart Clean</li><li>Cancel anytime</li></ul>
       </div>
-      <div class="plan">
+      <div class="plan reveal" style="--d:2">
         <h3>Airy Pro Lifetime</h3>
         <div class="price">$39.99</div>
         <div class="per">Pay once · no subscription</div>
@@ -156,8 +159,8 @@
 
 <section class="soft" id="faq">
   <div class="wrap">
-    <div class="center"><span class="kicker">FAQ</span><h2>Common questions</h2></div>
-    <div class="faq">
+    <div class="center reveal"><span class="kicker">FAQ</span><h2>Common questions</h2></div>
+    <div class="faq reveal">
 <details><summary>I deleted photos, but my free space didn&#39;t go up.</summary><p>iOS keeps deleted photos in Recently Deleted for 30 days. To free the space right away, empty it in Photos › Albums › Recently Deleted.</p></details>
 <details><summary>Can Airy delete my photos on its own?</summary><p>No. Every deletion goes through the Review screen, a 3-second Undo and your approval in the iOS confirmation dialog. Widgets and Shortcuts only open a screen; they never delete anything.</p></details>
 <details><summary>Are my photos sent to a server?</summary><p>No. Airy has no servers. All comparison and analysis happens on your iPhone.</p></details>
@@ -169,7 +172,7 @@
 </section>
 
 <div class="final">
-  <div class="wrap">
+  <div class="wrap reveal">
     <img src="../assets/img/icon.webp" alt="Airy" width="96" height="96" loading="lazy">
     <h2>Keep it light with Airy</h2>
     <p class="lead">Coming soon to the App Store.</p>
